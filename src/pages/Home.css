@@ -1,0 +1,41 @@
+.home__bg {
+  background-image: url(https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
+  height: 92vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+/*bg-[#202223]*/
+.home {
+  background-color: #000000;
+  @apply w-full h-screen flex;
+}
+.home-message-icon {
+  margin-left: 10px;
+  display: inline-block;
+}
+.heading {
+  /* background: linear-gradient(
+    90deg,
+    #3984ba,
+    #6611b7,
+    rgba(25, 176, 179, 0.925),
+    #3984ba
+  ); */
+  background: linear-gradient(90deg, black, red, yellow, green, black);
+  background-clip: text;
+  color: transparent;
+  background-size: 400%;
+
+  animation: text 10s linear infinite;
+  @apply text-9xl font-Sedgwick;
+}
+@keyframes text {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
